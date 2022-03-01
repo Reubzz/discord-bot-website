@@ -28,13 +28,14 @@ function commandsContent(id) {
   let chatMiscellaneous = document.getElementById('chat-miscellaneous-content');
   let chatModeration = document.getElementById('chat-moderation-content');
   // Slash Commands
-  // let slashLevelSys = document.getElementById('slash-level-system-content')
-  // let slashDiscordActivites = document.getElementById('slash-discord-activities-content')
-  // let slashmiscellaneous = document.getElementById('slash-miscellaneous-content')
-  // let slashModeraton = document.getElementById('slash-moderation-content')
-  // let slashAdmin = document.getElementById('slash-admin-content')
+  let slashLevelSys = document.getElementById('slash-level-system-content')
+  let slashDiscordActivites = document.getElementById('slash-discord-activities-content')
+  let slashmiscellaneous = document.getElementById('slash-miscellaneous-content')
+  let slashModeraton = document.getElementById('slash-moderation-content')
+  let slashAdmin = document.getElementById('slash-admin-content')
+  let slashMusic = document.getElementById('slash-music-content')
 
-  let arrayofContent = [chatLevelSys, chatGames, chatDiscordTogether, chatMiscellaneous, chatModeration]
+  let arrayofContent = [chatLevelSys, chatGames, chatDiscordTogether, chatMiscellaneous, chatModeration, slashLevelSys, slashDiscordActivites, slashmiscellaneous, slashModeraton, slashAdmin, slashMusic]
   // console.log(arrayofContent)
   arrayofContent.forEach((x) => {
     x.className = (x.className == 'is-hidden') ? 'is-hidden' : 'is-hidden';
