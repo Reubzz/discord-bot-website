@@ -4,9 +4,18 @@ function showhide(id) {
     e.className = (e.className == 'commands-main-menu') ? 'is-hidden commands-main-menu' : 'commands-main-menu';
 }
 function showhideCommandsContent(id) {
-    var e = document.getElementById(id);
-    e.className = (e.className == '') ? 'is-hidden' : '';
+    // var e = document.getElementById(id);
+    var e = document.getElementsByClassName(id)
+    for(let i = 0; i < e.length; i++) {
+      e[i].classList.toggle('is-hidden')
+    }
+    
+    // e.classList.toggle('is-hidden')
 }
+// function arrowDropDown(id) {
+//     var e = document.getElementsByClassName(id);
+//     e.classList = e.classList.toggle('is-hidden') // == '') ? 'is-hidden' : '';
+// }
 
 // Commands Page Menu Option Content Toggle
 function commandsContent(id) {
@@ -31,49 +40,6 @@ function commandsContent(id) {
     x.className = (x.className == 'is-hidden') ? 'is-hidden' : 'is-hidden';
   })
   element.className = (element.className == 'is-hidden') ? '' : 'is-hidden'
-  // if(element.id == chatLevelSys.id){
-  //   arrayofContent.forEach((x) => {
-  //     x.className = (x.className == 'is-hidden') ? 'is-hidden' : 'is-hidden'
-  //   })
-
-  //   element.className = (element.className == 'is-hidden') ? '' : 'is-hidden'
-  // }
-  // if(element.id == chatGames.id){
-  //   arrayofContent.forEach((x) => {
-  //     x.className = (x.className == 'is-hidden') ? 'is-hidden' : 'is-hidden'
-  //   })
-
-  //   element.className = (element.className == 'is-hidden') ? '' : 'is-hidden'
-  // }
-  // if(element.id == chatDiscordTogether.id){
-  //   arrayofContent.forEach((x) => {
-  //     x.className = (x.className == 'is-hidden') ? 'is-hidden' : 'is-hidden'
-  //   })
-
-  //   element.className = (element.className == 'is-hidden') ? '' : 'is-hidden'
-  // }
-  // if(element.id == chatMiscellaneous.id){
-  //   arrayofContent.forEach((x) => {
-  //     x.className = (x.className == 'is-hidden') ? 'is-hidden' : 'is-hidden'
-  //   })
-
-  //   element.className = (element.className == 'is-hidden') ? '' : 'is-hidden'
-  // }
-  // if(element.id == chatModeration.id){
-  //   arrayofContent.forEach((x) => {
-  //     x.className = (x.className == 'is-hidden') ? 'is-hidden' : 'is-hidden'
-  //   })
-
-  //   element.className = (element.className == 'is-hidden') ? '' : 'is-hidden'
-  // }
-  // if(element.id == chatadmin.id){
-  //   arrayofContent.forEach((x) => {
-  //     x.className = (x.className == 'is-hidden') ? 'is-hidden' : 'is-hidden'
-  //   })
-
-  //   element.className = (element.className == 'is-hidden') ? '' : 'is-hidden'
-  // }
-  
 }
 
 // Navbar for Mobile 
