@@ -1,4 +1,12 @@
-# Personal Website
-Personal Website for Private and Discord Bot Commands use. 
+# Reubz Discord Bot Website
 
-Coded in
+### 🔗 Link -> [bot.reubz.tk](https://bot.reubz.tk)
+
+Main Frontpage Website for Reubz's Multifunction Discord Bot.
+- Shows Commands.
+- Shows a run through all Features. (Coming Soon) 
+- Web Dashboard (Coming Soon)
+
+
+
+Coded in HTML. 👨‍💻
