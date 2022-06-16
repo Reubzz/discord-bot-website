@@ -1,3 +1,15 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+    background-color: #2f3136;
+    background-image: linear-gradient(to top, #232529, #2f3136, #2f3136);
+    width: 100vw;
+}
+/* Body - End*/
+
 .navbar, .navbar-dropdown ,.navbar-menu{
     background-color: #232529;
 }
@@ -28,50 +40,11 @@
 /* Navbar-Mobile - Burger  - End */
 
 
-/* Body - Start*/
-body{
-    color: white;
-    background-color: #2f3136;
-    background-image: linear-gradient(to top, #232529, #2f3136, #2f3136);
-}
 
 .subtitle, .white-bold, .title{
     color: white;
 }
-#online-bold{
-    color: white;
-}
 
-/* Commands Page Boxes */
-.box{
-    background-color: #232529;
-}
-
-/* Commands Boxes */
-.comamnds-box{
-    background-color: #2f3136;
-    animation: slide_up 1.5s ease 0.05s;
-}
-.commands-main-menu{
-    animation: fadeEffect 2s;
-    color: #2f3136 !important;
-}
-.commands-span-color{
-    animation: fadeEffect 1s;
-    background-color: #232529 !important;
-}
-.commands-span-color:hover{
-    background-color: #232529 !important;
-    color: #485fc7 !important;
-    cursor: pointer;
-}
-/* Commands Drop Down */
-.is-selected-option{
-    background-color: #485fc7;
-}
-.on-hover-color:hover:not(.is-active){
-    background-color: #485fc7;
-}
 
 /* Footer */
 footer{
@@ -86,15 +59,6 @@ footer{
     background-color: #232529   ;
 }
 
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes slide_up {
-    0% { transform: translateY(50px); }
-    100% { transform: translateY(0); }
-}
 
 
 /* Scroll Bar */
