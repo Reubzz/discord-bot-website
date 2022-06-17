@@ -1,5 +1,6 @@
 :root {
     --positionColor: #dbdada20;
+    --rw-color: #95a5a6
 }
 .card{
     background-color: #232529 !important;
@@ -27,10 +28,14 @@
     margin: 10px 0 10px 0;
 }
 .info-box span {
-    background-color: #232529;
+    background-color: #2f3136;
 }
 .lb-data {
     display: flex;
+    /* background-color: #7a7a7a !important; */
+}
+.box hr {
+    background-color: #464850 !important;
 }
 .data-start {
     display: flex;
@@ -59,4 +64,11 @@
 .data-end h1 {
     margin: 0 20px 0 20px;
     font-weight: bold;
+}
+.pfp {
+    margin: 2px;
+}
+.lb-rw {
+    background-color: var(--rw-color) !important;
+    color: #fff !important;
 }
