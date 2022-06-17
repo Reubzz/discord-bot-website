@@ -57,7 +57,7 @@
   <br />
 
   <section class="section">
-    <div class="container">
+    
 
         <div class="banner">
             <figure class="image is-128x128">
@@ -65,8 +65,19 @@
               </figure>
             <h1 class="title is-large has-text-white has-text-centered is-vcentered">SkRossi</h1>
         </div>
+        <div class="column is-three-quarters">
+            <div class="field has-addons">
+                <div class="control">
+                    <input onkeyup="search()" id="searchbar" class="input is-medium is-hovered" type="text" placeholder="Search ...">
+                </div>
+                <div class="control">
+                    <button type="submit" class="button is-medium is-light is-info"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+            
+        </div>
         <div class="columns">
-            <div class="column is-two-thirds">
+            <div class="column is-three-quater">
     
                 <!-- <div class="box lb-data">
                     <div class="data-start">
@@ -163,10 +174,10 @@
                         </div>
                     </div> 
                 </div> -->
-                <div class="box">
+                <div class="box" id="lb-box">
                     <div class="lb-data">
                         <div class="data-start">
-                            <h1 class="has-text-white is-large lb-position" style="--positionColor: #ffb53fcd">1</h1>
+                            <h2 class="has-text-white is-large lb-position" style="--positionColor: #ffb53fcd">1</h2>
                             <figure class="image is-48x48 pfp">
                                 <img class="is-rounded" src="https://cdn.discordapp.com/avatars/331382684188409857/f0e024dab4e0d9908af68b889aaeda7d.png?size=4096" alt="Placeholder image">
                             </figure>
@@ -186,7 +197,7 @@
                     <hr>
                     <div class=" lb-data">
                         <div class="data-start">
-                            <h1 class="has-text-white is-large lb-position" style="--positionColor: #a8a3a3ae">2</h1>
+                            <h2 class="has-text-white is-large lb-position" style="--positionColor: #a8a3a3ae">2</h2>
                             <figure class="image is-48x48 pfp">
                                 <img class="is-rounded" src="https://cdn.discordapp.com/avatars/446300603556167681/1ebb4d8d161e2735d9a0a744fea43d6f.png?size=4096" alt="Placeholder image">
                             </figure>
@@ -206,7 +217,7 @@
                     <hr>
                     <div class=" lb-data">
                         <div class="data-start">
-                            <h1 class="has-text-white is-large lb-position" style="--positionColor: #b57944d3">3</h1>
+                            <h2 class="has-text-white is-large lb-position" style="--positionColor: #b57944d3">3</h2>
                             <figure class="image is-48x48 pfp">
                                 <img class="is-rounded" src="https://cdn.discordapp.com/attachments/837732886094282752/987324677401751652/unknown.png?size=4096" alt="Placeholder image">
                             </figure>
@@ -226,7 +237,7 @@
                     <hr>
                     <div class=" lb-data">
                         <div class="data-start">
-                            <h1 class="has-text-white is-large lb-position">44</h1>
+                            <h2 class="has-text-white is-large lb-position">44</h2>
                             <figure class="image is-48x48 pfp">
                                 <img class="is-rounded" src="https://cdn.discordapp.com/attachments/837732886094282752/987324526872387676/unknown.png?size=4096" alt="Placeholder image">
                             </figure>
@@ -246,7 +257,7 @@
                     <hr>
                     <div class=" lb-data">
                         <div class="data-start">
-                            <h1 class="has-text-white is-large lb-position">100</h1>
+                            <h2 class="has-text-white is-large lb-position">100</h2>
                             <figure class="image is-48x48 pfp">
                                 <img class="is-rounded" src="https://cdn.discordapp.com/attachments/837732886094282752/987324265034567720/unknown.png?size=4096" alt="Placeholder image">
                             </figure>
@@ -271,7 +282,7 @@
             <!-- Right Side Info Boxes -->
             <!-- Right Side Info Boxes -->
 
-            <div class="column is-one-third">
+            <div class="column is-one-quarter">
                 <div class="box info-box">
                     <h1 class="has-text-white is-size-4">How It Works</h1>
                     <hr>
@@ -299,7 +310,7 @@
         </div>
 
       
-    </div>
+    
   </section>
 
     <!-- Footer -->

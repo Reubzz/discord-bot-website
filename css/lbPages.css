@@ -2,6 +2,9 @@
     --positionColor: #dbdada20;
     --rw-color: #95a5a6
 }
+.section {
+    margin: 0 20px !important;
+}
 .card{
     background-color: #232529 !important;
 }
@@ -20,19 +23,29 @@
     margin-left: 15px;
     margin-right: 15px;
 }
+.input {
+    background-color: #232529;
+    color: white !important;
+}
+::placeholder {
+    color: white !important;
+}
 .info-box p{
     color: #ccc6c6 !important;
 }
 .info-box hr {
-    background-color: #7a7a7a !important;
-    margin: 10px 0 10px 0;
+    margin: 15px 0;
+}
+.info-box h1 {
+    font-weight: bold;
+    font-size: 20px !important;
+    text-align: center;
 }
 .info-box span {
     background-color: #2f3136;
 }
 .lb-data {
     display: flex;
-    /* background-color: #7a7a7a !important; */
 }
 .box hr {
     background-color: #464850 !important;
@@ -45,16 +58,23 @@
 .data-start h1 {
     margin: 10px;
     font-weight: bold;
-    font-size: 20px !important;
+    font-size: 21px !important;
+}
+.data-start h2 {
+    margin: 10px;
+    font-weight: bold;
+    /* font-size: 20px !important; */
 }
 .lb-position {
     background-color: var(--positionColor);
-    
-    border-radius: 9999px!important;
-    width: 2rem !important;
+    border-radius: 100% !important;
+    width: 2.3rem !important;
+    height: 2.3rem !important;
+    font-size: 23px !important;
     display: flex;
     justify-content: center !important;
-    height: 2rem !important;
+    margin-right: 20px !important;
+    margin-left: 20px !important;
 }
 .data-end {
     display: flex;
@@ -64,6 +84,9 @@
 .data-end h1 {
     margin: 0 20px 0 20px;
     font-weight: bold;
+}
+.data-end p {
+    font-size: 18px !important;
 }
 .pfp {
     margin: 2px;
