@@ -8,13 +8,9 @@ function search(){
     for (i = 0; i < x.length; i++) { 
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
             x[i].style.display="none";
-            // let result = []
-            // result =+ x[i]
-            // elem.innerHTML = result
-            // console.log(result)
         }
         else {
-            x[i].style.display="";                 
+            x[i].style.display="";
         }
     }
 }
