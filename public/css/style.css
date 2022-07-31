@@ -1,0 +1,104 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+    background-color: #2f3136;
+    background-image: linear-gradient(to top, #232529, #2f3136, #2f3136);
+    width: 100vw;
+}
+a:hover {
+    color: #5978ff;
+}
+/* Body - End*/
+
+.navbar, .navbar-dropdown ,.navbar-menu{
+    background-color: #232529;
+}
+
+.navbar-link, .navbar-item{
+    color: white;
+}
+
+/* Nav Bar Colors - Start  */
+.bd-navbar-item:hover{
+    border-radius:.200em;
+    color: #ffffff !important
+}
+.bd-navbar-item:hover:not(.is-active){
+    background-color: #2f323d73 !important
+}
+/* Nav Bar Colors - End */
+
+/* Navbar-Mobile - Burger  - Start */
+.navbar-burger{
+    color: white;
+}
+.navbar-burger:hover{
+    border-radius: .200em;
+    color: white;
+    background-color: #485fc773;
+}
+/* Navbar-Mobile - Burger  - End */
+
+
+
+.subtitle, .white-bold, .title{
+    color: white;
+}
+
+
+/* Footer */
+footer{
+    background-color: #232529;
+}
+
+.footer{
+    color: white;
+    background-color: transparent;
+}
+.footer-dark-line{
+    background-color: #232529   ;
+}
+
+
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 6px;
+    /* To Hide Scroll Bar UnComment the below line */
+    /* display: none;  */
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2f3136; 
+    border-radius: .200em;    
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #232529;
+    border-radius: .200em;
+    border: 2px #232529;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #485fc7; 
+}
+
+/* Mobile Screen Responsiveness - Navbar */
+@media screen and (max-width: 1023px){
+    .navbar-start{
+        text-align: center;
+    }
+    .navbar-end {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar-end a{
+        display: inline-flex;
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "discord-bot-dashboard-v1",
+  "version": "1.0.0",
+  "description": "A Simple Web Dashboard for Reubz Bot and other custom bots managed/made by Reubz.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Reuben George (Reubz)",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "discord.js": "^13.8.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-static": "^1.2.6",
+    "handlebars": "^4.7.7",
+    "mongoose": "^6.3.6",
+    "simply-xp": "^1.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

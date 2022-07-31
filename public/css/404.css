@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+}
+.title {
+    text-align: center;
+    color: #ebebeb;
+}
+.button {
+    background-color: aquamarine !important;
+    border-color: #2f3136 !important;
+}
+.img-404 {
+    width: 40vw !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.timer {
+    font-size: 15px !important;
+}
+#timer {
+    background-color: #2f31363f !important;
+    color: white !important;
+    font-size: 12px !important;
+    font-weight: 700;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
