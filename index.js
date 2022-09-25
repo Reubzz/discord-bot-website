@@ -1,9 +1,12 @@
 const express = require('express');
 const path = require('path');
+const apicache = require('apicache');
+
 var exphbs = require('express-handlebars');
 require('dotenv').config()
 
 const app = express();
+let cache = apicache.middleware
 const port = process.env.PORT;
 
 app.engine('handlebars', exphbs.engine());

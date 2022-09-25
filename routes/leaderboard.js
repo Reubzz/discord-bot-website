@@ -4,6 +4,9 @@ const router = express.Router()
 const path = require('path')
 const Handlebars = require('handlebars')
 const mongoose = require("mongoose");
+const apicache = require('apicache');
+
+let cache = apicache.middleware
 
 require('dotenv').config();
 // const xp = require('simply-xp')
@@ -12,7 +15,7 @@ require('dotenv').config();
 router.get('/leaderboards', (req, res) => {
     res.sendFile(path.join(__dirname, '../pages', 'leaderboard', 'leaderboard.html'))
 })
-router.get('/leaderboards/:gid', (req, res) => {
+router.get('/leaderboards/:gid', cache('15 minutes'), (req, res) => {
     if(req.params.gid.toLowerCase() == 'skrossi' || req.params.gid == '749948917940092938' ) {
         axios.request({ url: "https://piquant-thread-production.up.railway.app/leaderboard/749948917940092938", method: "GET" })
             .then((r) => { 
