@@ -17,11 +17,11 @@ app.use(express.static('public'))
 app.use('/', require(path.join(__dirname, '/routes/leaderboard')))
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'pages', 'home', 'home2.html'))
+    res.sendFile(path.join(__dirname, 'pages', 'home', 'home.html'))
 });
 
 app.get('/home', (req, res) => {
-    res.sendFile(path.join(__dirname, 'pages', 'home', 'home2.html'))
+    res.sendFile(path.join(__dirname, 'pages', 'home', 'home.html'))
 });
 app.get('/commands', (req, res) => {
     res.sendFile(path.join(__dirname, 'pages', 'commands', 'commands.html'))
