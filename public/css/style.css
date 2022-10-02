@@ -29,6 +29,35 @@ a:hover {
 .bd-navbar-item:hover:not(.is-active){
     background-color: #2f323d73 !important
 }
+.bd-navbar-item {
+    position: relative;
+    text-decoration: none;
+    font-weight: 400;
+    color: #ffffff;
+    transition: all .35s ease;
+}
+.bd-navbar-item:hover {
+    color: yellow;   
+}
+.bd-navbar-item:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}   
+.bd-navbar-item::before {
+    content: ""; 
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #485FC7;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s; 
+    transition: all 0.3s ease-in-out 0s; 
+}   
 /* Nav Bar Colors - End */
 
 /* Navbar-Mobile - Burger  - Start */
