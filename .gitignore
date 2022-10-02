@@ -2,9 +2,9 @@ node_modules
 package-lock.json
 .vscode
 .env
-commands/
-css/
-data/
-js/
-leaderboards/
+/commands
+/css
+/data
+/js
+/leaderboards
 /Assets
