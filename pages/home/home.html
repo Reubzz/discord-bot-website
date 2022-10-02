@@ -14,10 +14,14 @@
 
     <!-- Style sheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
 		<link rel="shortcut icon" href="/Assets/imgs/Reubz-Official-Bot-Logo-(BETA)-(Transperant).png" type="image/x-icon">
+
   </head>
 
+  
   <body>
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
@@ -33,7 +37,7 @@
       </div>
 
       <div class="navbar-menu" id="navMenu">
-          <div class="navbar-start">
+          <div class="navbar-end">
               <a href="/" class="navbar-item bd-navbar-item">
                   Home
               </a>
@@ -46,53 +50,134 @@
           </div>
 
           <div class="navbar-end is-dark">
-              <a href="https://discord.gg/nmKqbgtEWb" class="navbar-item bd-navbar-item" target="_blank">
+              <a href="/discord" class="navbar-item bd-navbar-item" target="_blank">
                   <img src="/Assets/imgs/discord-final.png" alt="Reubz Discord Server">
               </a>
-              <a href="https://twitter.com/Official_Reubz" class="navbar-item is-hoverable bd-navbar-item" target="_blank">
+              <a href="/twitter" class="navbar-item is-hoverable bd-navbar-item" target="_blank">
                   <img src="/Assets/imgs/twitter-final.png" alt="Reubz Twitter">
               </a>
-              <a href="https://instagram.com/_.reubz._" class="navbar-item is-hoverable bd-navbar-item" target="_blank">
+              <a href="instagram" class="navbar-item is-hoverable bd-navbar-item" target="_blank">
                   <img src="/Assets/imgs/insta-final.png" alt="Reubz Instagram">
               </a>
           </div>
       </div>
   </nav>
-  <br />
-  <br />
+  
+  <section id="section1" class="section1">
+    <div class="section1-data">
 
-  <section class="section">
-    <div class="container">
-      <h1 class="title has-text-centered is-size-3">👷‍♂️🚧 This Page is Still Underway!! 🚧👷‍♂️</h1>
-      
-      <p class="has-text-centered">
-        <a href="/commands" class="is-size-5 ">While you're Here Check the Commands Page??</a>
-      </p>
-      
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <div class="left-intro">
+        <h1>Reubz Bot</h1>
+        <p>A multifunction Discord Bot.</p>
+        <p>Extremely easy to use and user friendly.</p>
+        <p>Moderation, YouTube Alerts, Games, Messages Scheduling and much more!!</p>
+        <div class="intro-buttons">
+          <button id="showfeat" class="greenbtn btns cursor-pointer" onClick="document.getElementById('section2').scrollIntoView();" type="button">Show Features</button>
+          <div class="tooltip">
+            <button id="addtosv" type="button" class="bluebtn btns cursor-notAllowed">Add to Server</button>
+            <span class="tooltiptext">Bot is still under Development, kindly check back later!</span>
+          </div>
+          <!-- <button id="addtosv" class="bluebtn btns cursor-notAllowed" type="button">Add to Server</button> -->
+        </div>
+      </div>
+      <div class="right-intro">
+        <img src="/Assets/imgs/Reubz-Official-Bot-Logo-(BETA)-(Transperant).png" alt="">
+      </div>
     </div>
   </section>
-  </body>
 
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
+
+
+  <section id="section2" class="section2">
+    <br>
+    <div class="features-p1">
+      <h1>Features</h1>
+      <div class="feat-left feat" data-aos="fade-up" >
+        <div class="info-box">
+          <h2>Leveling System</h2>
+          <p>Reubz Bot provides with a fully functioning Leveling System for your server. With features like per server rank card, role rewards, leaderboards, and many more configurable features.</p>
+        </div>
+        <div class="info-img">
+          <img src="/Assets/imgs/feat1.png" alt="">
+        </div>
+  
+      </div>
+      <div class="feat-right feat" data-aos="fade-up">
+        <div class="info-img">
+          <img src="/Assets/imgs/feat2.png" alt="">
+        </div>
+
+        <div class="info-box">
+          <h2>Games</h2>
+          <p>This bot allows users to play fun mini-games with other fellow members. Games like tic-tac-toe, rock-paper-scissors, and many more.</p>
+        </div>
+      </div>
+      <div class="feat-left feat" data-aos="fade-up">
+        <div class="info-box">
+          <h2>YouTube Notifications</h2>
+          <p>Easily set up the bot to send a Notification to a certian channel when a your favourite YouTuber posts a new video.</p>
+        </div>
+        <div class="info-img">
+          <img src="/Assets/imgs/feat3.png" alt="">
+        </div>
+  
+      </div>
+      <div class="feat-right feat" data-aos="fade-up">
+        <div class="info-img">
+          <img src="/Assets/imgs/feat4.png" alt="">
+        </div>
+
+        <div class="info-box">
+          <h2>Message Scheduler</h2>
+          <p>Sending messages automatically at a future date has never been easier.</p>
+          
+          <p>With a Single command, you can easily create and manage all your scheduled messages.</p>
+        </div>
+      </div>
+
+      <br>
+      <hr class="hrdark-small" data-aos="zoom-out">
+      <div class="addbot" data-aos="zoom-out">
+        <img src="/Assets/imgs/Reubz-Official-Bot-Logo-(BETA)-(Transperant).png" alt="">
+        <h3>Add the bot to your server Today!!</h3>
+        <div class="tooltip">
+          <button type="button" class="bluebtn btns cursor-notAllowed">Add to Server</button>
+          <span class="tooltiptext">Bot is still under Development, kindly check back later!</span>
+        </div>
+      </div>
+    </div>
+    <br>
+  </section>
     
   <footer class="footer">
     <div class="content has-text-centered">
-        <hr class="footer-dark-line">
+        <!-- <hr class="footer-dark-line"> -->
+        <div class="footer-data">
+          <div class="contact-us">
+            <h3 class="title">Contact Us</h3>
+            <p class="subtitle">
+              <a class="footer-link" href="/email">contact@reubz.tk</a>
+              <br>
+              <a class="footer-link" href="/instagram" target="_blank">Instagram</a>
+              <br>
+              <a class="footer-link" href="/twitter" target="_blank">Twitter</a>
+              <br>
+              <a class="footer-link" href="/discord" target="_blank">Discord</a>
+              <br>
+            </p>
+          </div>
+          <div class="quick-links">
+            <h3 class="title">Quick Links</h3>
+            <p class="subtitle">
+              <a class="footer-link" href="/">Home</a>
+              <br>
+              <a class="footer-link" href="/commands">Commands</a>
+              <br>
+              <a class="footer-link" href="/leaderboards">Leaderboards</a>
+              <br>
+            </p>
+          </div>
+        </div>
         <p>
             © 2022 <strong class="white-bold">Reubz Bot</strong> by
             <a href="https://github.com/Reubzz" target="_blank">Reuben George</a>.
@@ -101,4 +186,11 @@
 </footer>
 	
   <script src="/js/common.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      offset: 320
+    });
+  </script>
 </html>
