@@ -241,7 +241,7 @@ a:hover{
 /* Mobile Responsive */
 @media screen and (max-width: 1023px){
     .section1 {
-        background: no-repeat center/90% url(/Assets/imgs/homebgmobile.png);
+        background: no-repeat center/100% url(/Assets/imgs/homebgmobile.png);
         animation: pop 2s ease;    
     }
     .section1-data {
