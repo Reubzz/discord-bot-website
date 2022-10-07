@@ -3,7 +3,7 @@
 
 :root {
     --Nunito-font: "Nunito";
-    --Monstserrat-font-regular: "montserrat alternates";
+    --Monstserrat-font: "montserrat alternates";
     --green: #48C78E;
     --blue: #485FC7;
     --lgray: #2f3136;
@@ -22,7 +22,7 @@ body {
     font-size: 50px !important;
 }
 .sub {
-    font-family: var(--Monstserrat-font-regular) !important;
+    font-family: var(--Monstserrat-font) !important;
     font-size: 18px !important;
 }
 .button {
@@ -40,7 +40,7 @@ body {
 }
 .timer {
     font-size: 15px !important;
-    font-family: var(--Monstserrat-font-regular);
+    font-family: var(--Monstserrat-font);
 }
 #timer {
     background-color: #2f31363f !important;
