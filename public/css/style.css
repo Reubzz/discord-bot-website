@@ -158,7 +158,7 @@ a:hover {
 
 /* Mobile Screen Responsiveness - Navbar */
 @media screen and (max-width: 1023px){
-    .navbar-start{
+    .start{
         text-align: center;
     }
     .navbar-end {

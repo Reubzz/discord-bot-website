@@ -240,16 +240,6 @@ a:hover{
 }
 /* Mobile Responsive */
 @media screen and (max-width: 1023px){
-    .navbar-start{
-        text-align: center;
-    }
-    .navbar-end {
-        display: flex;
-        justify-content: center;
-    }
-    .navbar-end a{
-        display: inline-flex;
-    }
     .section1 {
         background: no-repeat center/100% url(/Assets/imgs/homebgmobile.png);
         animation: pop 2s ease;    
