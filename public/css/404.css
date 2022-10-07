@@ -54,8 +54,6 @@ body {
     color: #5b76ed;
     transition: all .35s ease;
     position: relative;
-    animation: bounce 2s 0.5s ease !important;
-    /* animation: bounce 2s ease-in-out; */
 }
 #cookie:hover {
     color: #53daff;
@@ -80,12 +78,3 @@ body {
     -webkit-transition: all 0.3s ease-in-out 0s; 
     transition: all 0.3s ease-in-out 0s; 
 }  
-
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-50px);
-    }
-}
