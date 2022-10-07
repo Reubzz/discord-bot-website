@@ -23,4 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
     }
+
+    $.get('/data/common-footer.html', function (x) {
+      $('footer').append(x)      
+    })
+    $.get('/data/common-navbar.html', function (x) {
+      $('nav').append(x)      
+    })
+    // $('metatags').load('/data/common-metatags.html')
+    // $('custom-stylesheets').load('/data/common-css.html')
 });

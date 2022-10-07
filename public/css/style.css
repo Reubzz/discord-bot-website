@@ -79,16 +79,40 @@ a:hover {
 
 
 /* Footer */
-footer{
-    background-color: #232529;
+.footer {
+    font: var(--subtitle-font-bold) !important;
+    background-color: var(--lgray);
+}
+.title {
+    color: #ffffff !important;
+    font: var(--title-font);
+}
+.subtitle {
+    font: var(--subtitle-font-regular);
+    text-decoration: none;
+}
+.footer-link {
+    color: #ffffff !important;
+}
+.footer-data {
+    padding: 0 70px;
+    display: flex;
+    justify-items: auto;
+}
+.contact-us {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
 }
 
-.footer{
-    color: white;
-    background-color: transparent;
-}
-.footer-dark-line{
-    background-color: #232529   ;
+
+.quick-links {
+    flex: 1;
+    /* display: flex; */
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
 }
 
 
@@ -129,5 +153,9 @@ footer{
     }
     .navbar-end a{
         display: inline-flex;
+    }
+    .footer-data {
+        display: block;
+        padding: 30px;
     }
 }
