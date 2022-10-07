@@ -5,6 +5,7 @@ const path = require('path')
 const Handlebars = require('handlebars')
 const mongoose = require("mongoose");
 const apicache = require('apicache');
+const config = require('../config.json')
 
 let cache = apicache.middleware
 
@@ -17,7 +18,7 @@ router.get('/leaderboards', (req, res) => {
 })
 router.get('/leaderboards/:gid', cache('15 minutes'), (req, res) => {
     if(req.params.gid.toLowerCase() == 'skrossi' || req.params.gid == '749948917940092938' ) {
-        axios.request({ url: "https://api.reubz.tk/leaderboard/749948917940092938", method: "GET" })
+        axios.request({ url: `${config.leaderboardApi}/leaderboard/749948917940092938`, method: "GET" })
             .then((r) => { 
                 res.render('skrossi-lb', {
                     lbdata: r.data
