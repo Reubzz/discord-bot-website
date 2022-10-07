@@ -34,7 +34,7 @@
             <h1 class="is-size-1 title">Lost your way??</h1>
 
 
-            <p>Ooopss, we can't find the page! But hey since you're here, we can offer you a <a href="/404-cookie">cookie</a>.</p>
+            <p class="sub">Ooopss, we can't find the page! But hey since you're here, we can offer you a <a id="cookie" href="/404-cookie">cookie</a>.</p>
             <br>
             <a href="/" class="">
                 <button class="button">Return to Home Page</button>  
@@ -51,21 +51,17 @@
     <footer class="footer"></footer>
 
     <script>
-        let redirectTime = 30; // in seconds
-        let x = 0;
+        let redirectTime = 10; // in seconds
 
-        function redirect () {
-            setTimeout(() => {
-                window.location.replace("/");
-            }, 1000 * redirectTime);
-        }
+        // setInterval(() => {
+        //     window.location.replace("/");
+        // }, 1000 * redirectTime + 4);
         function timer(params) {
-            let timer = document.getElementById('timer');
-            timer.innerHTML = redirectTime - x;
-            x++;
+            if(redirectTime == 0) window.location.replace("/");
+            document.getElementById('timer').innerHTML = redirectTime--;
         }
-        redirect()
         setInterval(timer, 1000)
     </script>
     <script src="/js/common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </html>

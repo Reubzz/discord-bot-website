@@ -1,13 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+
+:root {
+    --Nunito-font: "Nunito";
+    --Monstserrat-font-regular: "montserrat alternates";
+    --green: #48C78E;
+    --blue: #485FC7;
+    --lgray: #2f3136;
+    --dgray: #232529;
+    --white: #ffffff;
+    --black: #000000;
+}
+
 body {
     text-align: center;
 }
 .title {
     text-align: center;
-    color: #ebebeb;
+    color: var(--white);
+    font-family: var(--Nunito-font);
+    font-size: 50px !important;
+}
+.sub {
+    font-family: var(--Monstserrat-font-regular) !important;
+    font-size: 18px !important;
 }
 .button {
-    background-color: aquamarine !important;
+    background-color: var(--green) !important;
     border-color: #2f3136 !important;
+    color: var(--white);
+    font-family: var(--Nunito-font) !important;
+    font-size: 18px;
+    
 }
 .img-404 {
     width: 40vw !important;
@@ -16,6 +40,7 @@ body {
 }
 .timer {
     font-size: 15px !important;
+    font-family: var(--Monstserrat-font-regular);
 }
 #timer {
     background-color: #2f31363f !important;
@@ -24,4 +49,43 @@ body {
     font-weight: 700;
     padding-left: 5px !important;
     padding-right: 5px !important;
+}
+#cookie {
+    color: #5b76ed;
+    transition: all .35s ease;
+    position: relative;
+    animation: bounce 2s 0.5s ease !important;
+    /* animation: bounce 2s ease-in-out; */
+}
+#cookie:hover {
+    color: #53daff;
+    
+}
+#cookie:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+#cookie::before {
+    content: ""; 
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #53daff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s; 
+    transition: all 0.3s ease-in-out 0s; 
+}  
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
 }
