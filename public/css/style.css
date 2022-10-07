@@ -83,11 +83,11 @@ a:hover {
     font: var(--subtitle-font-bold) !important;
     background-color: var(--lgray);
 }
-.title {
+.footer-title {
     color: #ffffff !important;
     font: var(--title-font);
 }
-.subtitle {
+.footer-subtitle {
     font: var(--subtitle-font-regular);
     text-decoration: none;
 }
@@ -99,7 +99,7 @@ a:hover {
     display: flex;
     justify-items: auto;
 }
-.contact-us {
+.footer-contact-us {
     flex: 1;
     text-align: center;
     justify-content: center;
@@ -107,7 +107,7 @@ a:hover {
 }
 
 
-.quick-links {
+.footer-quick-links {
     flex: 1;
     /* display: flex; */
     text-align: center;
