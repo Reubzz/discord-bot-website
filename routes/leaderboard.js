@@ -17,7 +17,7 @@ router.get('/leaderboards', (req, res) => {
 })
 router.get('/leaderboards/:gid', cache('15 minutes'), (req, res) => {
     if(req.params.gid.toLowerCase() == 'skrossi' || req.params.gid == '749948917940092938' ) {
-        axios.request({ url: "https://piquant-thread-production.up.railway.app/leaderboard/749948917940092938", method: "GET" })
+        axios.request({ url: "https://api.reubz.tk/leaderboard/749948917940092938", method: "GET" })
             .then((r) => { 
                 res.render('skrossi-lb', {
                     lbdata: r.data
