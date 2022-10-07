@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+
+:root {
+    --Nunito-font: "Nunito";
+    --Monstserrat-font: "montserrat alternates";
+    --green: #48C78E;
+    --blue: #485FC7;
+    --lgray: #2f3136;
+    --dgray: #232529;
+    --white: #ffffff;
+    --black: #000000;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -80,15 +94,15 @@ a:hover {
 
 /* Footer */
 .footer {
-    font: var(--subtitle-font-bold) !important;
+    font: 700 16px var(--Monstserrat-font) !important;
     background-color: var(--lgray);
 }
 .footer-title {
     color: #ffffff !important;
-    font: var(--title-font);
+    font: 700 20px var(--Nunito-font);
 }
 .footer-subtitle {
-    font: var(--subtitle-font-regular);
+    font: 400 16px var(--Monstserrat-font);
     text-decoration: none;
 }
 .footer-link {
