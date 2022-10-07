@@ -45,7 +45,8 @@ app.get('/github', (req, res) => {
 
 // Custom Error Page
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'pages', 'Errors', '404.html'))
+    res.status(404).sendFile(path.join(__dirname, 'pages', 'Errors', '404.html'))
+    // res.sendFile(path.join(__dirname, 'pages', 'Errors', '404.html'))
 })
 
 app.listen(port, () => console.log(`App listening at http://localhost:${port}`));
