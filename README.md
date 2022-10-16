@@ -5,7 +5,7 @@
 ### Main Frontpage Website for Reubz's Multifunction Discord Bot.
 - Commands Page.
 - Per Server Leaderbaords 
-- Shows a run through all Features. (Coming Soon) 
+- Shows a run through all Features.  
 - Web Dashboard (Coming Soon)
 
 ## 📞Contact Me:
