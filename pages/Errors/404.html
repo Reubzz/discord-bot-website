@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Reubz Bot</title>
 
-            <!-- For Embeds on Other Websites -->
-        <meta content="bot.reubz.tk" property="og:title" />
-        <meta content="Error 404 Page Not Found!!" property="og:description" />
-        <meta content="https://bot.reubz.tk" property="og:url" />
-        <meta content="https://reubz.tk/Assets/imgs/404.png" property="og:image" />
-        <meta content="#2f3136" data-react-helmet="true" name="theme-color" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reubz Bot</title>
 
-        <!-- Style sheets -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="/css/404.css">
-		<link rel="shortcut icon" href="/Assets/imgs/Reubz-Official-Bot-Logo-(BETA)-(Transperant).png" type="image/x-icon">
-    </head>
+    <!-- For Embeds on Other Websites -->
+    <meta content="bot.reubz.io" property="og:title" />
+    <meta content="Error 404 Page Not Found!!" property="og:description" />
+    <meta content="https://bot.reubz.io" property="og:url" />
+    <meta content="https://bot.reubz.io/Assets/imgs/404.png" property="og:image" />
+    <meta content="#2f3136" data-react-helmet="true" name="theme-color" />
 
-    <body>
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/404.css">
+    <link rel="shortcut icon" href="/Assets/imgs/Reubz-Official-Bot-Logo-(BETA)-(Transperant).png" type="image/x-icon">
+</head>
+
+<body>
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
                 <img src="/Assets/imgs/Logo2.png" alt="Reubz Bot Logo" style="max-height: 3 5px;">
             </a>
-        
+
             <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
-        
+
         <div class="navbar-menu" id="navMenu">
             <div class="navbar-end start">
                 <a href="/" class="navbar-item bd-navbar-item">
@@ -45,7 +46,7 @@
                     Leaderboards
                 </a>
             </div>
-        
+
             <div class="navbar-end is-dark">
                 <a href="/discord" class="navbar-item bd-navbar-item" target="_blank">
                     <img src="/Assets/imgs/discord-final.png" alt="Reubz Discord Server">
@@ -59,23 +60,22 @@
             </div>
         </div>
     </nav>
-  <br />
-  <br />
+    <br />
+    <br />
 
     <section class="section">
         <div class="">
             <figure class="image img-404">
-                <img class=""
-                    src="/Assets/imgs/404.png"
-                    alt="404 image">
+                <img class="" src="/Assets/imgs/404.png" alt="404 image">
             </figure>
             <h1 class="is-size-1 title">Lost your way??</h1>
 
 
-            <p class="sub">Ooopss, we can't find the page! But hey since you're here, we can offer you a <a id="cookie" href="/404-cookie">cookie</a>.</p>
+            <p class="sub">Ooopss, we can't find the page! But hey since you're here, we can offer you a <a id="cookie"
+                    href="/404-cookie">cookie</a>.</p>
             <br>
             <a href="/" class="">
-                <button class="button">Return to Home Page</button>  
+                <button class="button">Return to Home Page</button>
             </a>
             <br>
             <br>
@@ -85,18 +85,19 @@
     </section>
 </body>
 
-    <!-- Footer -->    
-    <footer class="footer"></footer>
+<!-- Footer -->
+<footer class="footer"></footer>
 
-    <script>
-        let redirectTime = 30; // in seconds
+<script>
+    let redirectTime = 30; // in seconds
 
-        function timer(params) {
-            if(redirectTime == 0) window.location.replace("/");
-            document.getElementById('timer').innerHTML = redirectTime--;
-        }
-        setInterval(timer, 1000)
-    </script>
-    <script src="/js/common.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    function timer(params) {
+        if (redirectTime == 0) window.location.replace("/");
+        document.getElementById('timer').innerHTML = redirectTime--;
+    }
+    setInterval(timer, 1000)
+</script>
+<script src="/js/common.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 </html>

@@ -1,3 +1,9 @@
+/** Development Mode */
+
+const devMode = true
+
+/** Development Mode - true or false */
+
 const express = require('express');
 const path = require('path');
 const apicache = require('apicache');
@@ -51,4 +57,11 @@ app.get('*', (req, res) => {
     res.status(404).sendFile(path.join(__dirname, 'pages', 'Errors', '404.html'))
 })
 
-app.listen(port, () => console.log(`App listening at http://localhost:${port}`));
+
+// if (devMode == true) app.listen(port, () => console.log(`App listening at http://localhost:${port}`));
+// else app.listen(port, () => console.log(`App listening at https://${config.domain}`));
+
+app.listen(port, () => {
+    if (devMode == true) console.log(`Server on - http://localhost:${port}`);
+    else console.log(`Server on - https://${config.domain}`);
+})

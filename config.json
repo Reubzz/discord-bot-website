@@ -3,8 +3,9 @@
     "instagram": "https://instagram.com/_.reubz._/",
     "twitter": "https://twitter.com/official_reubz/",
     "discord": "https://discord.gg/nmKqbgtEWb",
-    "email": "mailto:contact@reubz.tk",
+    "email": "mailto:contact@reubz.io",
     "github": "https://github.com/reubzz"
   },
-  "leaderboardApi": "https://piquant-thread-production.up.railway.app"
+  "leaderboardApi": "https://piquant-thread-production.up.railway.app",
+  "domain": "bot.reubz.io"
 }
