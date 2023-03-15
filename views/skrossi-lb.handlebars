@@ -6,7 +6,7 @@
                 src="https://cdn.discordapp.com/icons/749948917940092938/a_be977943fe6a2da41857dd464c4500ce.png?size=4096"
                 alt="Placeholder image">
         </figure>
-        <h1 class="title is-large has-text-white has-text-centered is-vcentered">SkRossi</h1>
+        <h1 class="title is-large has-text-white has-text-centered is-vcentered">{{lbServerName}}</h1>
     </div>
 </div>
 <div class="column is-three-quarters">
@@ -23,8 +23,9 @@
 </div>
 
 <div class="columns">
-    {{!-- Static Content for MOBILES ONLY!!  --}}
-    <div class="column is-one-quarter is-hidden-desktop is-hidden-widescreen is-hidden-fullhd is-full-tablet is-full-mobile">
+    {{!-- Static Content for MOBILES ONLY!! --}}
+    <div
+        class="column is-one-quarter is-hidden-desktop is-hidden-widescreen is-hidden-fullhd is-full-tablet is-full-mobile">
         <div class="box info-box">
             <a onclick="dropdown('works-content', 'works-arrow')" class="has-text-white is-size-4">
                 <i class="fa-solid fa-angle-down" id="works-arrow"></i>
@@ -36,8 +37,10 @@
                 <br>
                 <p class="has-text-light-grey">To avoid spamming, earning XP is limited to once a minute per user.</p>
                 <br>
-                <p class="has-text-grey">Use commands <span class="tag has-text-white commands-span-color">/rank</span> or
-                    <span class="tag has-text-white">!rank</span> to check your rank and level.</p>
+                <p class="has-text-grey">Use commands <span class="tag has-text-white commands-span-color">/rank</span>
+                    or
+                    <span class="tag has-text-white">!rank</span> to check your rank and level.
+                </p>
             </div>
         </div>
         <div class="box info-box rw">
@@ -65,20 +68,20 @@
             </div>
         </div>
     </div>
-{{!-- Dynamic Side --}}
+    {{!-- Dynamic Side --}}
     <div class="column is-three-quater">
-        
+
         <div class="box" id="lb-box">
-    {{#each lbdata}}
-            {{#if @index}} <hr class="lb-divider" id="divider-{{@index}}"> {{/if}}
-                
+            {{#each lbdata}}
+            {{#if @index}}
+            <hr class="lb-divider" id="divider-{{@index}}"> {{/if}}
+
             <div class="lb-data" id="{{@index}}">
                 <div class="data-start">
-                    <h2 class="has-text-white is-large lb-position" style="--positionColor: {{ positionColor @index}}">{{this.position}}</h2>
+                    <h2 class="has-text-white is-large lb-position" style="--positionColor: {{ positionColor @index}}">
+                        {{this.position}}</h2>
                     <figure class="image is-48x48 pfp">
-                        <img class="is-rounded"
-                            src="{{this.pfp}}"
-                            alt="Placeholder image">
+                        <img class="is-rounded" src="{{this.pfp}}" alt="Placeholder image">
                     </figure>
                     <h1 class="has-text-white is-large is-size-5">{{this.tag}}</h1>
                 </div>
@@ -93,8 +96,8 @@
                     </div>
                 </div>
             </div>
-            
-{{/each}}
+
+            {{/each}}
 
         </div>
 
@@ -111,7 +114,8 @@
             <p class="has-text-light-grey">To avoid spamming, earning XP is limited to once a minute per user.</p>
             <br>
             <p class="has-text-grey">Use commands <span class="tag has-text-white commands-span-color">/rank</span> or
-                <span class="tag has-text-white">!rank</span> to check your rank and level.</p>
+                <span class="tag has-text-white">!rank</span> to check your rank and level.
+            </p>
         </div>
         <div class="box info-box rw">
             <h1 class="has-text-white is-size-4">Role Rewards</h1>
@@ -137,7 +141,4 @@
 
 
 
-	<script src="/js/lb-page/app.js"></script>
-    
-
-
+<script src="/js/lb-page/app.js"></script>
