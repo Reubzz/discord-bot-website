@@ -1,0 +1,78 @@
+{{!-- Static Content Below --}}
+<div class="banner">
+    <div class="banner-content">
+        <figure class="image banner-svlogo-size">
+            <img class="is-rounded" src="/Assets/imgs/404.png" alt="Server image">
+        </figure>
+        <h1 class="title is-large has-text-white has-text-centered is-vcentered">XYZ</h1>
+    </div>
+</div>
+<div class="column is-three-quarters">
+    <div class="field has-addons">
+        <div class="control">
+            <input onkeyup="search()" id="searchbar" class="input is-normal is-hovered" type="text"
+                placeholder="Search ...">
+        </div>
+        <div class="control">
+            <button type="submit" class="button is-normal is-light is-info"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+</div>
+
+<div class="columns">
+    {{!-- Static Content for MOBILES ONLY!! --}}
+    <div
+        class="column is-one-quarter is-hidden-desktop is-hidden-widescreen is-hidden-fullhd is-full-tablet is-full-mobile">
+        <div class="box info-box">
+            <a onclick="dropdown('works-content', 'works-arrow')" class="has-text-white is-size-4">
+                <i class="fa-solid fa-angle-down" id="works-arrow"></i>
+                <h1 class="has-text-white is-size-4">How It Works</h1>
+            </a>
+            <div class="is-hidden" id="works-content">
+                <hr>
+                <p class="has-text-grey">Every minute that you're messaging, you randomly gain between 15 and 25 XP.</p>
+                <br>
+                <p class="has-text-light-grey">To avoid spamming, earning XP is limited to once a minute per user.</p>
+                <br>
+                <p class="has-text-grey">Use commands <span class="tag has-text-white commands-span-color">/rank</span>
+                    or
+                    <span class="tag has-text-white">!rank</span> to check your rank and level.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    {{!-- Dynamic Side --}}
+    <div class="column is-three-quater">
+
+        <div class="box" id="lb-box">
+            <div>
+                <h1 class="has-text-centered has-text-white is-size-5">Error Loading Leaderboards. Please try again in a
+                    while!! If error continues <a href="mailto:contact@reubz.io">Contact Here</a></h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    {{!-- Static Content Below --}}
+
+    <div class="column is-one-quarter is-hidden-mobile is-hidden-tablet-only">
+        <div class="box info-box">
+            <h1 class="has-text-white is-size-4">How It Works</h1>
+            <hr>
+            <p class="has-text-grey">Every minute that you're messaging, you randomly gain between 15 and 25 XP.</p>
+            <br>
+            <p class="has-text-light-grey">To avoid spamming, earning XP is limited to once a minute per user.</p>
+            <br>
+            <p class="has-text-grey">Use commands <span class="tag has-text-white commands-span-color">/rank</span> or
+                <span class="tag has-text-white">!rank</span> to check your rank and level.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="/js/lb-page/app.js"></script>
