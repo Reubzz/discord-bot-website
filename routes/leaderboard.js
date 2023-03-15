@@ -17,13 +17,17 @@ router.get('/leaderboards', (req, res) => {
     res.sendFile(path.join(__dirname, '../pages', 'leaderboard', 'leaderboard.html'))
 })
 router.get('/leaderboards/:gid', cache('15 minutes'), (req, res) => {
-    if (req.params.gid.toLowerCase() == 'skrossi' || req.params.gid == '749948917940092938') {
-        axios.request({ url: `${config.leaderboardApi}/leaderboard/749948917940092938`, method: "GET" })
+    let server_id = ['749948917940092938', 'skrossi']; // skrossi server id
+    if (server_id.includes(req.params.gid)) {
+        axios.request({ url: `${config.leaderboardApi}/leaderboard/${server_id[0]}`, method: "GET" })
             .then((r) => {
                 res.render('skrossi-lb', {
+                    lbServerName: req.params.gid,
                     lbdata: r.data
                 })
-
+            })
+            .catch((e) => {
+                res.render('error-lb')
             })
     }
     else
