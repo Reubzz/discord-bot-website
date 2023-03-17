@@ -2,11 +2,9 @@
 <div class="banner">
     <div class="banner-content">
         <figure class="image banner-svlogo-size">
-            <img class="is-rounded"
-                src="https://cdn.discordapp.com/icons/749948917940092938/a_be977943fe6a2da41857dd464c4500ce.png?size=4096"
-                alt="Placeholder image">
+            <img class="is-rounded" src="{{lbdata.[0].serverIcon}}" alt="Server icon">
         </figure>
-        <h1 class="title is-large has-text-white has-text-centered is-vcentered">{{lbServerName}}</h1>
+        <h1 class="title is-large has-text-white has-text-centered is-vcentered">{{lbdata.[0].serverName}}</h1>
     </div>
 </div>
 <div class="column is-three-quarters">
@@ -51,20 +49,14 @@
             <div class="is-hidden" id="rw-content">
 
                 <hr>
-                <p class="is-size-5">Level 5 <i class="fa-solid fa-right-long"></i> <span class="tag is-medium lb-rw"
-                        style="--rw-color: #87bdf8">Normies</span></p>
+                {{#each lbdata.[0].serverLevels}}
+                <p class="is-size-5">
+                    Level {{this.lvl}}
+                    <i class="fa-solid fa-right-long"></i>
+                    <span class="tag is-medium lb-rw" style="--rw-color: {{this.color}}">{{this.role}}</span>
+                </p>
                 <br>
-                <p class="is-size-5">Level 10 <i class="fa-solid fa-right-long"></i> <span class="tag is-medium lb-rw"
-                        style="--rw-color: #5cc6f5">Hypesquad</span></p>
-                <br>
-                <p class="is-size-5">Level 20 <i class="fa-solid fa-right-long"></i> <span class="tag is-medium lb-rw"
-                        style="--rw-color: #1b82ff">Kōhai</span></p>
-                <br>
-                <p class="is-size-5">Level 50 <i class="fa-solid fa-right-long"></i> <span class="tag is-medium lb-rw"
-                        style="--rw-color: #f19999">Senpai</span></p>
-                <br>
-                <p class="is-size-5">Level 100 <i class="fa-solid fa-right-long"></i> <span class="tag is-medium lb-rw"
-                        style="--rw-color: #ff4a5d">No Life Gang</span></p>
+                {{/each}}
             </div>
         </div>
     </div>
@@ -120,21 +112,14 @@
         <div class="box info-box rw">
             <h1 class="has-text-white is-size-4">Role Rewards</h1>
             <hr>
-            <p class="is-size-5">Level 5 <i class="fa-solid fa-right-long"></i> <span class="tag is-medium lb-rw"
-                    style="--rw-color: #87bdf8">Normies</span></p>
+            {{#each lbdata.[0].serverLevels}}
+            <p class="is-size-5">
+                Level {{this.lvl}}
+                <i class="fa-solid fa-right-long"></i>
+                <span class="tag is-medium lb-rw" style="--rw-color: {{this.color}}">{{this.role}}</span>
+            </p>
             <br>
-            <p class="is-size-5">Level 10 <i class="fa-solid fa-right-long"></i> <span class="tag is-medium lb-rw"
-                    style="--rw-color: #5cc6f5">Hypesquad</span></p>
-            <br>
-            <p class="is-size-5">Level 20 <i class="fa-solid fa-right-long"></i> <span class="tag is-medium lb-rw"
-                    style="--rw-color: #1b82ff">Kōhai</span></p>
-            <br>
-            <p class="is-size-5">Level 50 <i class="fa-solid fa-right-long"></i> <span class="tag is-medium lb-rw"
-                    style="--rw-color: #f19999">Senpai</span></p>
-            <br>
-            <p class="is-size-5">Level 100 <i class="fa-solid fa-right-long"></i> <span class="tag is-medium lb-rw"
-                    style="--rw-color: #ff4a5d">No Life Gang</span></p>
-            <br>
+            {{/each}}
         </div>
     </div>
 </div>
