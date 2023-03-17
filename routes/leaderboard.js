@@ -21,13 +21,10 @@ router.get('/leaderboards/:gid', cache('15 minutes'), (req, res) => {
     if (server_id.includes(req.params.gid)) {
         axios.request({ url: `${config.leaderboardApi}/leaderboard/${server_id[0]}`, method: "GET" })
             .then((r) => {
-                res.render('skrossi-lb', {
-                    lbServerName: req.params.gid,
-                    lbdata: r.data
-                })
+                res.render('skrossi-lb', { lbdata: r.data });
             })
             .catch((e) => {
-                res.render('error-lb')
+                res.render('error-lb');
             })
     }
     else
